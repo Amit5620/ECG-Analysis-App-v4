@@ -1,0 +1,158 @@
+/* Background with overlay */
+body {
+    background: linear-gradient(135deg, #ffafbd, #ffc3a0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.3);
+    z-index: -1;
+}
+
+/* Card styling */
+.upload-card {
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0 6px 25px rgba(0, 0, 0, 0.25);
+    padding: 35px;
+    width: 90%;
+    max-width: 600px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    text-align: center;
+}
+
+.upload-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+}
+
+/* Heading & subtitle */
+h2 {
+    font-size: 1.8rem;
+    color: #ff6f61;
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.subtitle {
+    font-size: 0.95rem;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+/* Input fields */
+.form-control, .form-select {
+    border-radius: 12px;
+    border: 1px solid #ff6f61;
+    transition: all 0.3s ease;
+    margin-bottom: 15px;
+    padding: 10px;
+}
+
+.form-control:focus, .form-select:focus {
+    border-color: #ff3e2f;
+    box-shadow: 0 0 8px rgba(255, 111, 97, 0.4);
+}
+
+/* File input */
+.file-input {
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 15px;
+}
+
+.file-input input[type="file"] {
+    position: absolute;
+    top: 0;
+    right: 0;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.file-input label {
+    display: block;
+    padding: 12px;
+    border: 1px solid #ff6f61;
+    border-radius: 12px;
+    text-align: center;
+    background: #fdfdfd;
+    color: #444;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.file-input label:hover {
+    background: #ff6f61;
+    color: white;
+}
+
+/* File name display */
+.image-name {
+    text-align: center;
+    margin-top: 10px;
+    color: #6a11cb;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+/* Button */
+.upload-btn {
+    background: linear-gradient(135deg, #ff6f61, #de6a4d);
+    border: none;
+    color: white;
+    padding: 12px;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 12px;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.upload-btn:hover {
+    background: linear-gradient(135deg, #de6a4d, #ff6f61);
+    transform: translateY(-3px);
+    box-shadow: 0 4px 12px rgba(255, 111, 97, 0.4);
+}
+
+/* Loading */
+.loading {
+    display: none;
+    text-align: center;
+    margin-top: 20px;
+    color: #ff6f61;
+    font-weight: 600;
+}
+
+.spinner-border {
+    margin-top: 10px;
+}
+
+/* Responsive */
+@media (max-width: 576px) {
+    .upload-card {
+        width: 95%;
+        padding: 20px;
+    }
+    h2 {
+        font-size: 1.4rem;
+    }
+    .upload-btn {
+        font-size: 0.9rem;
+    }
+}

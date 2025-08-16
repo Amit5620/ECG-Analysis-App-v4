@@ -1,0 +1,122 @@
+/* === Global Styles === */
+body {
+    background: linear-gradient(135deg, #ffecd2, #fcb69f);
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+    padding-bottom: 60px;
+    line-height: 1.6;
+}
+
+/* Container Styling */
+.container {
+    max-width: 1200px;
+    margin: auto;
+    margin-top: 30px;
+    background: #ffffff;
+    border-radius: 20px;
+    padding: 40px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+    animation: fadeIn 1.2s ease-in-out;
+}
+
+/* Headings */
+h2 {
+    color: #ff4e50;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 2rem;
+}
+
+h3 {
+    color: #ff6f61;
+    margin-top: 40px;
+    margin-bottom: 18px;
+    font-weight: 600;
+    border-left: 5px solid #ff4e50;
+    padding-left: 12px;
+}
+
+h4, h5, h6 {
+    font-weight: 600;
+    color: #444;
+}
+
+/* Card Sections */
+.patient-details, 
+.prediction-results, 
+.data-section, 
+.ecg-stages {
+    background: #fdfdfd;
+    padding: 22px;
+    border-radius: 15px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08);
+    margin-top: 30px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.patient-details:hover, 
+.prediction-results:hover, 
+.data-section:hover, 
+.ecg-stages:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 22px rgba(0, 0, 0, 0.12);
+}
+
+/* Table Styling */
+.table th, .table td {
+    text-align: center;
+    font-size: 14px;
+    padding: 10px;
+}
+
+.table thead {
+    background: linear-gradient(135deg, #ff4e50, #ff6f61);
+    color: white;
+    font-size: 15px;
+}
+
+/* Image Styling */
+img {
+    border-radius: 12px;
+    width: 100%;
+    height: auto;
+    margin-top: 10px;
+    transition: transform 0.3s ease;
+}
+
+img:hover {
+    transform: scale(1.02);
+}
+
+/* Button Styling */
+.btn {
+    background: linear-gradient(135deg, #ff6f61, #ff4e50);
+    color: white !important;
+    border: none;
+    padding: 12px 28px;
+    border-radius: 10px;
+    margin: 10px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    background: linear-gradient(135deg, #ff4e50, #ff6f61);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(0,0,0,0.2);
+}
+
+/* Download Section */
+.download-section {
+    margin-top: 18px;
+    text-align: center;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}

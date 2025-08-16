@@ -1,0 +1,57 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+/* Hero Section */
+.hero {
+  height: 90vh;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(20, 20, 20, 0.7)),
+    url("https://images.unsplash.com/photo-1588776814546-ec54b94c6d63") no-repeat center center/cover;
+}
+
+.hero h1 {
+  font-size: 3.5rem;
+}
+
+.hero p {
+  font-size: 1.3rem;
+  margin-bottom: 20px;
+}
+
+/* Features Section */
+.features {
+  background: linear-gradient(135deg, #0072ff, #00c6ff);
+}
+
+.feature-icon {
+  width: 70px;
+  height: 70px;
+}
+
+/* Step Cards */
+.step-card {
+  background: white;
+  color: #0072ff;
+  font-weight: bold;
+  font-size: 1.2rem;
+  transition: transform 0.3s ease-in-out;
+}
+
+.step-card:hover {
+  transform: scale(1.1);
+}
+
+/* Testimonials */
+.testimonials {
+  background: linear-gradient(135deg, #ff6f61, #ff9966);
+}
+
+.testimonials .card {
+  border: none;
+  background: rgba(255, 255, 255, 0.9);
+  color: #333;
+  border-radius: 15px;
+}
