@@ -6,9 +6,9 @@ This web-based **ECG Analysis Application** uses **both Deep Learning and Machin
 ---
 
 
-### 🌐 **Live App**: [https://ecg-analysis-app-v4.onrender.com](https://ecg-analysis-app-v3.onrender.com)  
+### 🌐 **Live App**: [https://ecg-analysis-app-v4.onrender.com](https://ecg-analysis-app-v4.onrender.com)  
 
-### 📁 **GitHub**: [https://github.com/Amit5620/ECG-Analysis-App-v4](https://github.com/Amit5620/ECG-Analysis-App-v3)
+### 📁 **GitHub**: [https://github.com/Amit5620/ECG-Analysis-App-v4](https://github.com/Amit5620/ECG-Analysis-App-v4)
 
 ---
 
